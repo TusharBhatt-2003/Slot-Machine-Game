@@ -1,0 +1,222 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: auto;
+    margin: 5em;
+}
+
+.container {
+    text-align: center;
+    background-color: #ffffff;
+    color: #000000;
+    padding: 1em;
+    border-radius: 1em;
+    width: 30em;
+}
+
+h1 {
+    margin-bottom: 1em;
+    padding: 1em;
+    font-size: larger;
+}
+
+.balance {
+    background:rgb(255, 247, 231);
+    display: inline-block;
+    padding-top: none;
+    justify-items: center;
+    padding-bottom: none;
+    padding-left: 1em;
+    padding-right: 1em;
+    margin: none;
+    border: solid 1px black;
+    border-radius: 1em;
+}
+
+label {
+    font-size: large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 1em;
+}
+
+.input-group {
+    margin: 10px 0;
+    padding: 0.5em;
+}
+
+input {
+    padding: 0.5em;
+    background-color: #f0fff9;
+    width: 50%;
+    display: inline-block;
+    border: none;
+    border-radius: 10px;
+    
+}
+
+button {
+    padding: 10px;
+    margin: 10px 0;
+    width: 100%;
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #152a00;
+}
+
+.slot-machine {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: inherit;
+    justify-content: space-between;
+    border: double rgb(59, 24, 24) ;
+    border-radius: 1em;
+    margin: 0.5em ;
+}
+
+.reel {
+    
+    flex-grow: inherit;
+    padding: 1em;
+    margin: 0.5em;
+    background-color: #ffffffcb;
+   box-shadow:  5px 5px 10px #d3d3d3,
+             -5px -5px 10px #ededed;
+
+    color: #000000;
+    border-radius: 5px;
+    font-size: 24px;
+}
+
+.result {
+
+    font-size: larger;
+    display: inline-block;
+    margin: none;
+    border-radius: 1em;
+}
+
+#playAgainBtn {
+    display: none;
+}
+
+#line-buttons {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+   
+}
+
+.line-btn {
+    background-color: #000000;  
+    border-radius: 1em;
+    width: 1.5em;
+    padding: 0;
+    text-align: center;  
+    line-height: 50px;
+    font-size: 30px;
+}
+
+
+
+
+.line-btn:hover {
+    background-color: #152a00;
+}
+
+#chosen-line {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #000000;
+    font-weight: bold;
+    text-decoration: 2px underline rgb(255, 243, 220);
+}
+
+#instructions {
+    text-align:left;
+    padding: 2em;
+    font-family: Arial, sans-serif;
+    margin-top: 20px;
+    color: #ffffff;
+}
+
+#instructions h3 {
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+#instructions p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+/* Media Queries for Responsiveness */
+
+@media (min-width: 768px) {
+body {
+    width: auto;
+    height: auto;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+    .container {
+        width: 80%;
+        padding: 2em;
+        
+    }
+
+    .balance {
+        font-size: 1.2em;
+    }
+
+    input {
+        width: 50%;
+    }
+
+    .line-btn {
+        width: 2em;
+        font-size: 36px;
+    }
+
+    #instructions {
+        padding: 3em;
+    }
+}
+
+@media (min-width: 1024px) {
+    .container {
+        width: 70%;
+    }
+
+    h1 {
+        font-size: 2.5em;
+    }
+
+    .reel {
+        font-size: 32px;
+    }
+
+    .line-btn {
+        width: 2.5em;
+        font-size: 42px;
+    }
+
+    #instructions {
+        font-size: 20px;
+    }
+}

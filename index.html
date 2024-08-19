@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-16">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+<link rel="manifest" href="favicon/site.webmanifest">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slot Machine Game</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Slot Machine Game</h1>
+
+        <div class="balance">
+            <p>Balance: $<span id="balance">0</span></p>
+        </div>
+
+        <div class="input-group">
+            <label for="deposit">Deposit Amount:</label>
+            <input  id="deposit" placeholder="Enter deposit amount">
+            <button id="depositBtn">Deposit</button>
+        </div>
+
+        <div class="input-group">
+            <label>Choose Number of Lines:</label>
+            <div id="lines-buttons">
+                <button class="line-btn" data-lines="1">1</button>
+                <button class="line-btn" data-lines="2">2</button>
+                <button class="line-btn" data-lines="3">3</button>
+            </div>
+            <p id="chosen-line"></p>
+        </div>
+
+        <div class="input-group">
+            <label for="bet">Bet per Line:</label>
+            <input  id="bet" placeholder="Enter bet per line">
+        </div>
+
+        <button id="spinBtn">Spin</button>
+
+        <div class="slot-machine">
+            <div class="reel" id="reel1">1</div>
+            <div class="reel" id="reel2">2</div>
+            <div class="reel" id="reel3">3</div>
+        </div>
+
+        <div class="result">
+            <p id="resultMessage"></p>
+        </div>
+
+        <button id="playAgainBtn">Play Again</button>
+    </div>
+
+    <div id="instructions">
+        <h3>How to Play:</h3>
+        <p>
+            1. Deposit your money to start.<br>
+            2. Select the number of lines (1, 2, or 3) to bet on.<br>
+            3. Enter the amount you want to bet per line.<br>
+            4. Click the "Spin" button to spin the slot machine.<br>
+            5. If you win, your winnings will be added to your balance.<br>
+            6. Keep playing until you decide to stop or run out of money!
+        </p>
+
+        <h3>Values: 🤑</h3>
+        <p> 
+            🌟 = X50 <br>
+            👽 = X10 <br>
+            👻 = X8 <br>
+            🤡 = X5
+        </p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
