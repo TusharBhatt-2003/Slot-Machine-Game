@@ -54,6 +54,7 @@ input:invalid {
 }
 
 .input-group {
+    margin-top: none;
     margin-bottom: 1em;
     display: flex;
     flex-direction: column;
@@ -62,7 +63,9 @@ input:invalid {
 }
 
 .input-group label {
-    margin-bottom: 5px;
+    margin-top: none;
+    margin-bottom: 0.5em;
+    font-size: larger;
     font-family: "Rajdhani", sans-serif;
 }
 
@@ -72,7 +75,7 @@ input {
     border: 2px solid #000;
     border-radius: 5px;
     width: 100%; /* Ensure full width within the smaller container */
-    margin-bottom: 10px;
+    margin-bottom: 0.5em;
 }
 
 .btn {
@@ -90,18 +93,9 @@ input {
     color: #000;
 }
 
-.spinBtn {
-    padding: 10px;
-    background-color: #000;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    width: 100%;
-}
 
 .spinBtn:hover {
-    background-color: #d3bdff;
+    background-color: #ff9898;
     color: #000;
 }
 
@@ -131,7 +125,7 @@ input {
     height: 50px;
     text-align: center;
     font-size: 18px;
-    margin: 5px;
+    margin: none;
 }
 
 .line-btn:hover {
@@ -141,6 +135,9 @@ input {
 
 }
 
+#chosen-line {
+    margin: none;
+}
 .playBtn {
     padding: 10px;
     background-color: #ffffff;
@@ -200,6 +197,7 @@ input {
     }
     
 }
+
 
 footer {
     margin: 1em;
