@@ -200,3 +200,10 @@ input {
     }
     
 }
+
+footer {
+    margin: 1em;
+    font-size: 1em;
+    font-family: "Rajdhani", sans-serif;
+    
+}
