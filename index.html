@@ -17,8 +17,7 @@
 <title>Slot Machine Game</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-
-     <style>      
+    <style>      
           @media only screen and (max-width: 576px) {
             body {
               background-image: url("image/bg.png"); /* Replace with your image path */
@@ -56,9 +55,8 @@
         <div class="input-group">
             <label for="bet">Bet per Line:</label>
             <input required type="number" id="bet" placeholder="Enter bet per line">
-        </div>
-
-        <button id="spinBtn" class="spinBtn  w-100 my-3">Spin</button>
+        <button id="spinBtn" class="btn">Spin</button>
+      </div>
 
         <div class="slot-machine d-flex flex-column align-items-center">
             <div class="reel" id="reel1">1</div>
@@ -73,7 +71,7 @@
         <button id="playAgainBtn" class="playBtn w-100 mt-3" style="display: none;">Play Again</button>
     </div>
 
-    <div id="instructions" class="container text-left mt-4">
+    <div id="instructions" class="container text-left m-5">
         <h3>How to Play:</h3>
         <p>
             1. Deposit your money to start.<br>
@@ -92,7 +90,9 @@
             🤡 = X5
         </p>
     </div>
- <footer>Created and Designed By <span style="color: rgb(120, 0, 0);">Tushar Bhatt</span> &copy 2024</footer>
+
+    <footer>Created and Designed By <span style="color: rgb(120, 0, 0);">Tushar Bhatt</span> &copy 2024</footer>
+
     <script src="script.js"></script>
 </body>
 </html>
