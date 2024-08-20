@@ -2,47 +2,54 @@
 <html lang="en">
 <head>
     <meta charset="UTF-16">
+
     <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-<link rel="manifest" href="favicon/site.webmanifest">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Slot Machine Game</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jersey+10&family=M+PLUS+Code+Latin:wght@100..700&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+   
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+<title>Slot Machine Game</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
+    <div class="container text-center">
         <h1>Slot Machine Game</h1>
 
-        <div class="balance">
-            <p>Balance: $<span id="balance">0</span></p>
+        <div class="balance">  
+                 <p>Balance: $<span id="balance">0</span></p>          
         </div>
 
         <div class="input-group">
             <label for="deposit">Deposit Amount:</label>
-            <input  id="deposit" placeholder="Enter deposit amount">
-            <button id="depositBtn">Deposit</button>
+            <input required type="number" id="deposit" placeholder="Enter deposit amount" minlength="12">
+            <button id="depositBtn" class="btn btn-dark">Deposit</button>
         </div>
 
         <div class="input-group">
             <label>Choose Number of Lines:</label>
-            <div id="lines-buttons">
-                <button class="line-btn" data-lines="1">1</button>
-                <button class="line-btn" data-lines="2">2</button>
-                <button class="line-btn" data-lines="3">3</button>
+            <div id="lines-buttons" class="d-flex justify-content-center">
+                <button class="line-btn btn btn-dark rounded-circle mx-2" data-lines="1">1</button>
+                <button class="line-btn btn btn-dark rounded-circle mx-2" data-lines="2">2</button>
+                <button class="line-btn btn btn-dark rounded-circle mx-2" data-lines="3">3</button>
             </div>
             <p id="chosen-line"></p>
         </div>
 
         <div class="input-group">
             <label for="bet">Bet per Line:</label>
-            <input  id="bet" placeholder="Enter bet per line">
+            <input required type="number" id="bet" placeholder="Enter bet per line">
         </div>
 
-        <button id="spinBtn">Spin</button>
+        <button id="spinBtn" class="spinBtn  w-100 my-3">Spin</button>
 
-        <div class="slot-machine">
+        <div class="slot-machine d-flex flex-column align-items-center">
             <div class="reel" id="reel1">1</div>
             <div class="reel" id="reel2">2</div>
             <div class="reel" id="reel3">3</div>
@@ -52,10 +59,10 @@
             <p id="resultMessage"></p>
         </div>
 
-        <button id="playAgainBtn">Play Again</button>
+        <button id="playAgainBtn" class="playBtn w-100 mt-3" style="display: none;">Play Again</button>
     </div>
 
-    <div id="instructions">
+    <div id="instructions" class="container text-left mt-4">
         <h3>How to Play:</h3>
         <p>
             1. Deposit your money to start.<br>
